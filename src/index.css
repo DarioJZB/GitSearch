@@ -17,6 +17,8 @@ a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
+  margin: 5px;
+
 }
 a:hover {
   color: #535bf2;
@@ -120,5 +122,48 @@ tbody tr:nth-child(odd) {
 }
 
 .cardContainer {
-  border-radius: 20px;
+  background-color: #000;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-bottom: 10px;
+}
+
+img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+p {
+  padding-left: 2em;
+}
+
+h2 {
+  padding-left: 1em;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em;
+}
+
+.centerImage {
+  display: block;
+  margin: 0 auto;
+  width: 6em;
+  height: auto;
+  border-radius: 6px;
+}
+
+.rejectButton {
+  display: block;
+  margin: 0 auto;
+  border-radius: 100%;
+  background-color: red;
+}
+
+td, th {
+  white-space: normal;
+  word-wrap: break-word;
 }
