@@ -1,33 +1,82 @@
-# React + TypeScript + Vite
+# GitSearch
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application for searching GitHub users and saving profiles as potential candidates for an employer. 
 
-Currently, two official plugins are available:
+## Features
 
-* [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md), which uses [Babel](https://babeljs.io/) for Fast Refresh
-* [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc), which uses [SWC](https://swc.rs/) for Fast Refresh
+- **Search GitHub Users**: Quickly search for users on GitHub by username.
+- **View Profile Information**: Access key details about each user, including:
+  - Profile Image
+  - Username
+  - Location
+  - Email
+  - Company
+  - Bio
+- **Save Candidates**: Save users as potential candidates for future reference.
+- **Remove Candidates**: Easily remove users from the saved candidates list.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you're developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React**: For building the user interface.
+- **GitHub API**: For fetching user data from GitHub.
+- **CSS**: For styling the components.
 
-* Configure the top-level `parserOptions` property as follows:
+## Installation
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. **Clone the Repository**
 
-* Replace `plugin:@typescript-eslint/recommended` with `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`.
-* Optionally, add `plugin:@typescript-eslint/stylistic-type-checked`.
-* Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` and `plugin:react/jsx-runtime` to the `extends` list.
+   ```bash
+   git clone https://github.com/DarioJZB/GitSearch
+   cd GitSearch
+   ```
+
+2. **Install Dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Set Up GitHub API Access**
+
+   - Create a `.env` file in the root directory and add your GitHub API token:
+     ```plaintext
+     VITE_GITHUB_TOKEN=your_github_token
+     ```
+
+4. **Run the Application**
+
+   ```bash
+   npm run dev
+   ```
+
+   The app will run locally at `http://localhost:5173`.
+
+## Usage
+
+1. **Search for Users**: Enter a GitHub username to retrieve and display profiles.
+2. **Save Candidates**: Click "Save" to add a user to the list of saved candidates.
+3. **View Saved Candidates**: Navigate to the "Saved Candidates" page to review saved profiles.
+4. **Remove Candidates**: Click "Reject" to remove a user from the saved list.
+
+## Contributing
+
+1. Fork the repository.
+2. Create a new branch for your feature (`git checkout -b feature-name`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature-name`).
+5. Create a pull request.
+
+## License
+
+This project is licensed under the MIT License.
 
 ---
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
+## Contact
+
+Created by [Dario Zambrano](https://github.com/DarioJZB). Feel free to reach out with any questions or suggestions!
+
+--- 
+
+This README includes the purpose of the application, setup instructions, usage guidelines, folder structure, and contribution instructions. You can customize the placeholder links, images, and URLs as needed.
